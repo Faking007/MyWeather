@@ -1,0 +1,10 @@
+<!--pages/list/list.wxml-->
+<view class='date-item' wx:for='{{weekWeather}}'>
+  <view class='day-wrapper'>
+    <view class='day'>{{item.day}}</view>
+    <view class='date'>{{item.date}}</view>
+  </view>
+  <view class='temp'>{{item.temp}}</view>
+  <view class='weather-text'>{{item.text}}</view>
+  <image class='weather-icon' src='{{item.iconPath}}'></image>
+</view>

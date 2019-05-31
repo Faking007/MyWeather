@@ -1,0 +1,58 @@
+/* pages/list/list.wxss */
+.weather-tips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.tips-icon {
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 28rpx;
+}
+
+.tips-text {
+  font-size: 35rpx;
+  line-height: 59rpx;
+  opacity: 0.8;
+}
+
+.date-item {
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+  margin: 0 40rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.day{
+  opacity: 0.8;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+
+.date{
+  opacity: 0.5;
+  font-size: 25rpx;
+  line-height: 35rpx;
+}
+
+.temp{
+  flex-grow: 1;
+  padding-left: 120rpx;
+  opacity: 0.8;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+
+.weather-text{
+  opacity: 0.8;
+  font-size: 38rpx;
+  line-height: 53rpx;
+}
+
+.weather-icon{
+  width: 90rpx;
+  height: 90rpx;
+}

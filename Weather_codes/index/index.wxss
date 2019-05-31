@@ -1,0 +1,290 @@
+
+/*width 750rpx, height 760rpx
+760=20+100+154+280+56+150*/
+
+.weather-wrapper{
+  position: relative;
+  padding-top: 20rpx;
+  padding-bottom: 150rpx;
+}
+
+/* 100 = 20 + 30 + 20 + 30
+*/
+.search-wrapper{
+  padding: 15rpx;
+  margin-bottom: 40rpx;
+  border: solid 1rpx ghostwhite;
+  line-height: 30rpx;
+  opacity: 0.5;
+}
+
+.search-icon{
+  z-index: 2;
+  position: absolute;
+  right: 10rpx;
+  top: 30rpx;
+  height: 70rpx;
+  width: 70rpx;
+}
+
+/*height 154rpx
+154=42+10+42+60*/
+.location-wrapper{
+  margin-bottom: 60rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)!important;
+  border: none!important;
+  padding: 0!important;
+}
+
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon{
+  margin-right: 10rpx;
+  width: 21rpx;
+  height: 30rpx;
+}
+
+.location-tips{
+  height: 42rpx; /*固定高度, 没字时也有高度*/
+  margin-top:10rpx;
+  text-align: center;
+}
+
+.temp {
+  text-align:center;
+  font-size:200rpx;
+  line-height:280rpx;
+  opacity:0.8;
+}
+
+.weather {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  opacity: 0.65;
+}
+
+.weather-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* 日期、温度差 */
+
+.day-weather {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom:0;
+  left: 40rpx;
+  right: 40rpx;
+  height: 91rpx;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.week-text{
+  text-align: center;
+  padding-left: 30rpx;
+}
+
+.temp-text {
+  flex-grow: 1;
+  padding-right: 30rpx;
+  text-align: right;
+}
+
+.arrow-icon {
+  width: 13rpx;
+  height: 24rpx;
+}
+
+/* 未来24小时天气预测 */
+
+.timetips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.timetips-icon {
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 28rpx;
+}
+
+.timetips-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.6;
+}
+
+/* 预测数据列表 */
+/* height: 278 =  42 + 50 + 50 + 60 + 56*/
+.scroll-view {
+  border-bottom: 1rpx gainsboro solid;
+  padding-bottom: 10rpx;
+  height: 258rpx;
+}
+
+.forecast-list {
+    display: flex;
+}
+
+.forecast-item {
+    display:flex;
+    width: 120rpx;
+    flex-shrink: 0;
+    flex-direction:column;
+    align-items:center;
+}
+
+.forecast-time {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.forecast-weather {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.forecast-temp {
+  font-size: 40rpx;
+  line-height: 56rpx
+}
+
+.margin-tips {
+  margin-top: 30rpx;
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* 更多信息 */
+.bg-color {
+
+}
+
+.more-weather {
+  margin-left: 75rpx;
+  display: flex;
+  border-bottom: 1rpx gainsboro solid;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  width: 600rpx;
+}
+
+.more-weather-last {  
+  margin-left: 75rpx;
+  display: flex;
+  padding-top: 10rpx;
+  width: 600rpx;
+}
+
+.more-item {
+  padding-left: 10rpx;
+  width: 25%;
+}
+
+.more-title {
+  height: 42rpx;
+  font-size: 30rpx;
+  opacity: 0.8;
+}
+
+.more-content {
+  height: 44rpx;
+  font-size: 32rpx;
+  opacity: 0.8;
+}
+
+.more-bottom {
+  margin-top: 10rpx;
+  border-bottom: 1rpx gainsboro solid;
+}
+
+/* 生活指数 */
+.lifestyle {
+  
+}
+
+.ls-item {
+  margin-left: 50rpx;
+  padding-top: 10rpx;
+  display: flex;
+  width: 650rpx;
+  border-bottom: 1rpx gainsboro solid;
+  z-index: 2;
+}
+
+.for-img {
+  height: 112rpx;
+  width: 110rpx;
+}
+
+.ls-img {
+  /* 图片样式要改 */
+  max-height: 60%;
+  max-width: 80%;
+  padding-top: 22rpx;
+  padding-left: 5rpx;
+}
+
+/* 112 = 42 + 35 + 35  */
+
+.ls-title {
+  height: 42rpx;
+  font-size: 30rpx;
+  opacity: 0.8;
+}
+
+.ls-text {
+  height: 35rpx;
+  font-size: 25rpx;
+  opacity: 0.8;
+}
+
+.end {
+  padding: 10rpx;
+  height: 35rpx;
+  font-size: 25rpx;
+  opacity: 0.6;
+  text-align: center;
+
+}
+
+/* more style */
+.menus .menu,
+.menus .share {
+  height: 40px;
+  width: 40px;
+  border: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 150rpx;
+  right: 70rpx;
+  opacity: 0;
+}
+
+.menus .main {
+  opacity: 1;
+}
