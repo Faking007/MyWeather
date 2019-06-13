@@ -1,2 +1,2 @@
-# MyWeather
-  基于微信小程序的天气应用 
+## My Weather Application based on WeChat applet
+  
